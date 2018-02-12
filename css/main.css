@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* Header options animation */
+.div-header{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+span{
+  border-bottom: 3px solid #000000;
+}
+/*letters animation*/
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+}
+.greeting{
+  font-size: 80px;
+}
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  background-color: #ff6680;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+/*about-me*/
+.about-me{
+  background-color: #000000;
+  height: 70vh;
+}
