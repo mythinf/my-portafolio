@@ -2,57 +2,61 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+  font-family: 'Barlow', sans-serif;
+  background: #000000;
 }
 /* Header options animation */
 .div-header{
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  color:  #ffff;
+
 }
-span{
-  border-bottom: 3px solid #000000;
+main{
+  background-image: url(../assets/photos/photo1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slash::after{
+  margin: 5px;
+  content: " /  ";
 }
 /*letters animation*/
-main{
+.flex-div{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  height: 100vh;
-  overflow: hidden;
+  height: 80vh;
 }
-#particle-canvas {
-  width: 100%;
-  height: 100%;
+.name{
+  color:  #ffff;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Ropa Sans', sans-serif;
 }
-.greeting{
-  font-size: 80px;
+.sub-name{
+  color:  red;
+  text-align: center;
+/*  border-top: 3px solid #000000;*/
 }
-.text-js{
-  opacity: 0;
+.sub-name::after{
+  content: " > ";
 }
-.cursor{
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  right: -5px;
-  width: 2px;
-  background-color: #ff6680;
-  z-index: 1;
-  animation: flash 0.5s none infinite alternate;
+.sub-name::before{
+  content: " < ";
 }
-@keyframes flash{
-  0%{
-    opacity: 1;
+
+@media (min-width: 992px) {
+  .name{
+    font-size: 80px;
+    font-family: 'Ropa Sans', sans-serif;
   }
-  100%{
-    opacity: 0;
+  .slash::after{
+    margin: 20px;
+    content: " /  ";
   }
-}
-/*about-me*/
-.about-me{
-  background-color: #000000;
-  height: 70vh;
 }
