@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 body{
-  font-family: 'Barlow', sans-serif;
   background: #000000;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 /* Header options animation */
 .div-header{
@@ -43,11 +43,12 @@ main{
   color:  #ffff;
   font-size: 40px;
   text-align: center;
-  font-family: 'News Cycle', sans-serif;
 }
 .sub-name{
+  border-top: 1px solid #ffcccc;
   color:  #ffcccc;
-  text-align: right;
+  padding-top: 10px;
+  text-align: center;
 /*  border-top: 3px solid #000000;*/
 }
 .sub-name::after{
@@ -56,13 +57,11 @@ main{
 .sub-name::before{
   content: " < ";
 }
-.margin-bottom{
-  border-bottom: 3px solid #ffff;
-}
 /* about-me */
 .about-me{
   background: #ffff;
 }
+/*description*/
 .description{
   padding: 50px;
   text-align: left;
@@ -70,14 +69,40 @@ main{
   color: #ffff;
   background: #000000;
 }
+.text-align-right{
+  text-align: right;
+}
+.feature{
+  font-size: 11px;
+}
+.feature::after{
+  content: " -"
+}
+.last::after{
+  content: " "
+}
+/* skills */
 .skills{
-  background: #ffff;
+  background-image: url(../assets/photos/photo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
   height: 100vh;
 }
+/* photo */
 .photo{
- padding: 50px;
- background:#ffcccc;
+ background-image: url(../assets/photos/photo2.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding: 60px;
  height: 100vh;
+}
+img{
+ width: 330px;
+ height: 510px;
+ border: 2px solid #000000;
+ padding: 20px;
+ border-radius: 5px;
 }
 @media (min-width: 992px) {
   main{
@@ -85,7 +110,6 @@ main{
   }
   .name{
     font-size: 80px;
-    font-family: 'Ropa Sans', sans-serif;
   }
   .slash::after{
     margin: 20px;
